@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "mechania_core:block/electromagnetic_coil_top",
+    "side": "mechania_core:block/electromagnetic_coil_side"
+  }
+}

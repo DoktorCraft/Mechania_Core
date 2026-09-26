@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "bottom": "mechania_core:block/nuclear_casing",
+    "front": "mechania_core:block/nuclear_controller",
+    "side": "mechania_core:block/nuclear_casing",
+    "top": "mechania_core:block/nuclear_casing"
+  }
+}

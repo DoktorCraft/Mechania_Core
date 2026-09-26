@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "mechania_core:block/electromagnetic_coil_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "mechania_core:block/electromagnetic_coil"
+    },
+    "axis=z": {
+      "model": "mechania_core:block/electromagnetic_coil_horizontal",
+      "x": 90
+    }
+  }
+}

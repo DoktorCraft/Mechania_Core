@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "mechania_core:item/synthetic_mechanium_fragment"
+  }
+}
