@@ -1,6 +1,7 @@
 package ch.dok.mechania_core;
 
 import ch.dok.mechania_core.item.ModCreativeModeTabs;
+import ch.dok.mechania_core.sound.ModSounds;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import ch.dok.mechania_core.item.ModItem;
@@ -14,5 +15,6 @@ public class Mechania_core {
         ModItem.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
+        ModSounds.register(modEventBus);
     }
 }

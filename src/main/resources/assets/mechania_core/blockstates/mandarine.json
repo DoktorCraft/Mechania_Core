@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "mechania_core:block/mandarine", "y": 0   },
+    "facing=east":  { "model": "mechania_core:block/mandarine", "y": 90  },
+    "facing=south": { "model": "mechania_core:block/mandarine", "y": 180 },
+    "facing=west":  { "model": "mechania_core:block/mandarine", "y": 270 }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "hdf_dok": {
+    "subtitle": "sounds.mechania_core.hdf_dok",
+    "sounds": [
+      "mechania_core:hdf_dok"
+    ]
+  },
+  "mete_plush": {
+    "subtitle": "sounds.viridis.mete_plush",
+    "sounds": [
+      "mechania_core:mete_plush"
+    ]
+  },
+  "dok_plush": {
+    "subtitle": "sounds.viridis.dok_plush",
+    "sounds": [
+      "mechania_core:dok_plush"
+    ]
+  },
+  "lachsi_plush": {
+    "subtitle": "sounds.viridis.lachsi_plush",
+    "sounds": [
+      "mechania_core:lachsi_plush"
+    ]
+  },
+  "bien_plush": {
+    "subtitle": "sounds.viridis.bien_plush",
+    "sounds": [
+      "mechania_core:bien_plush"
+    ]
+  },
+  "matti_plush": {
+    "subtitle": "sounds.viridis.matti_plush",
+    "sounds": [
+      "mechania_core:matti_plush"
+    ]
+  },
+  "sodog_plush": {
+    "subtitle": "sounds.viridis.sodog_plush",
+    "sounds": [
+      "mechania_core:sodog_plush"
+    ]
+  }
+}

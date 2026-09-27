@@ -49,6 +49,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ELECTROMAGNETIC_COIL);
                         output.accept(ModBlocks.NUCLEAR_CASING);
                         output.accept(ModBlocks.NUCLEAR_CONTROLLER);
+                        output.accept(ModBlocks.BAUXITE_DEPOSIT);
+                        output.accept(ModBlocks.LITHIUM_DEPOSIT);
+                        output.accept(ModBlocks.ALEX_URANIUM_DEPOSIT);
+                        output.accept(ModBlocks.SULFUR_DEPOSIT);
+                        output.accept(ModBlocks.FLUORITE_DEPOSIT);
+                        output.accept(ModBlocks.MANDARINE);
+                        output.accept(ModBlocks.DOK_PLUSH);
                     }).build());
 
 
