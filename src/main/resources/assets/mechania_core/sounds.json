@@ -52,5 +52,29 @@
     "sounds": [
       "mechania_core:null_plush"
     ]
+  },
+  "verity_plush": {
+    "subtitle": "sounds.mechania_core.verity_plush",
+    "sounds": [
+      "mechania_core:verity_plush"
+    ]
+  },
+  "tung_plush": {
+    "subtitle": "sounds.mechania_core.tung_plush",
+    "sounds": [
+      "mechania_core:tung_plush"
+    ]
+  },
+  "trs_plush": {
+    "subtitle": "sounds.mechania_core.trs_plush",
+    "sounds": [
+      "mechania_core:trs_plush"
+    ]
+  },
+  "jime_plush": {
+    "subtitle": "sounds.mechania_core.jime_plush",
+    "sounds": [
+      "mechania_core:jime_plush"
+    ]
   }
 }

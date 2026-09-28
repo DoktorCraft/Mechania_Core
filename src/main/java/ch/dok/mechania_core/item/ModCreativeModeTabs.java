@@ -63,6 +63,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.METE_PLUSH);
                         output.accept(ModBlocks.FLOWERY_PLUSH);
                         output.accept(ModBlocks.NULL_PLUSH);
+                        output.accept(ModBlocks.VERITY_PLUSH);
+                        output.accept(ModBlocks.TUNG_PLUSH);
+                        output.accept(ModBlocks.TRS_PLUSH);
+                        output.accept(ModBlocks.JIME_PLUSH);
                     }).build());
 
 

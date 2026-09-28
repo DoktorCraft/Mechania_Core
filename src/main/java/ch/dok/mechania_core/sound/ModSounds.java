@@ -22,6 +22,10 @@ public class ModSounds {
     public static final Supplier<SoundEvent> COVER_PLUSH = registerSoundEvent("cover_plush");
     public static final Supplier<SoundEvent> FLOWERY_PLUSH = registerSoundEvent("flowery_plush");
     public static final Supplier<SoundEvent> NULL_PLUSH = registerSoundEvent("null_plush");
+    public static final Supplier<SoundEvent> VERITY_PLUSH = registerSoundEvent("verity_plush");
+    public static final Supplier<SoundEvent> TUNG_PLUSH = registerSoundEvent("tung_plush");
+    public static final Supplier<SoundEvent> TRS_PLUSH = registerSoundEvent("trs_plush");
+    public static final Supplier<SoundEvent> JIME_PLUSH = registerSoundEvent("jime_plush");
 
 
 

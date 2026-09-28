@@ -57,6 +57,14 @@ public class ModBlocks {
             () -> new PlushBlock(BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.WOOL).noOcclusion(), ModSounds.FLOWERY_PLUSH.get())); //Can you say Jarona?
     public static final DeferredBlock<Block> NULL_PLUSH = registerBlock("null_plush",
             () -> new PlushBlock(BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.WOOL).noOcclusion(), ModSounds.NULL_PLUSH.get()));
+    public static final DeferredBlock<Block> VERITY_PLUSH = registerBlock("verity_plush",
+            () -> new PlushBlock(BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.WOOL).noOcclusion(), ModSounds.VERITY_PLUSH.get()));
+    public static final DeferredBlock<Block> TUNG_PLUSH = registerBlock("tung_plush",
+            () -> new PlushBlock(BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.WOOL).noOcclusion(), ModSounds.TUNG_PLUSH.get()));
+    public static final DeferredBlock<Block> TRS_PLUSH = registerBlock("trs_plush",
+            () -> new PlushBlock(BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.WOOL).noOcclusion(), ModSounds.TRS_PLUSH.get()));
+    public static final DeferredBlock<Block> JIME_PLUSH = registerBlock("jime_plush",
+            () -> new PlushBlock(BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.WOOL).noOcclusion(), ModSounds.JIME_PLUSH.get()));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

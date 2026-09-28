@@ -2,6 +2,9 @@ package ch.dok.mechania_core.block.custom;
 
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.resources.sounds.SimpleSoundInstance;
+import net.minecraft.client.resources.sounds.SoundInstance;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -21,6 +24,9 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class PlushBlock extends HorizontalDirectionalBlock {
 
     public static final MapCodec<PlushBlock> CODEC = RecordCodecBuilder.mapCodec(instance ->
@@ -34,6 +40,9 @@ public class PlushBlock extends HorizontalDirectionalBlock {
     private static final VoxelShape SHAPE_SOUTH = Block.box(3,   0, 1.5, 13,   15.5, 11.5);
     private static final VoxelShape SHAPE_EAST  = Block.box(1.5, 0, 3,   11.5, 15.5, 13  );
     private static final VoxelShape SHAPE_WEST  = Block.box(4.5, 0, 3,   14.5, 15.5, 13  );
+
+    // Client-side only — accessed exclusively inside level.isClientSide() guards
+    private static final Map<BlockPos, SoundInstance> ACTIVE_SOUNDS = new HashMap<>();
 
     private final SoundEvent plushSound;
 
@@ -80,9 +89,50 @@ public class PlushBlock extends HorizontalDirectionalBlock {
     @Override
     protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos,
                                                Player player, BlockHitResult hitResult) {
-        if (!level.isClientSide()) {
-            level.playSound(null, pos, this.plushSound, SoundSource.BLOCKS, 0.5f, 1.0f);
+        if (level.isClientSide()) {
+            // Stop previous sound at this position (prevents stacking)
+            stopActiveSound(pos);
+
+            float pitch = 1.0f + level.getRandom().nextFloat() * 0.1f - 0.05f;
+            SoundInstance instance = new SimpleSoundInstance(
+                plushSound.getLocation(), SoundSource.BLOCKS, 0.5f, pitch,
+                level.getRandom(), false, 0, SoundInstance.Attenuation.LINEAR,
+                pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, false
+            );
+            Minecraft.getInstance().getSoundManager().play(instance);
+            ACTIVE_SOUNDS.put(pos.immutable(), instance);
+        } else {
+            // Broadcast to other nearby players in multiplayer (clicking player excluded)
+            level.playSound(player, pos, plushSound, SoundSource.BLOCKS, 0.5f, 1.0f);
         }
         return InteractionResult.SUCCESS;
+    }
+
+    @Override
+    public void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState, boolean movedByPiston) {
+        if (level.isClientSide() && !state.is(newState.getBlock())) {
+            stopActiveSound(pos);
+        }
+        super.onRemove(state, level, pos, newState, movedByPiston);
+    }
+
+    private static void stopActiveSound(BlockPos pos) {
+        SoundInstance sound = ACTIVE_SOUNDS.remove(pos);
+        if (sound != null) {
+            Minecraft.getInstance().getSoundManager().stop(sound);
+        }
+    }
+
+    // Called every client tick — stops sounds whose blocks no longer exist
+    public static void cleanupActiveSounds() {
+        Minecraft mc = Minecraft.getInstance();
+        if (mc.level == null) return;
+        ACTIVE_SOUNDS.entrySet().removeIf(entry -> {
+            if (!(mc.level.getBlockState(entry.getKey()).getBlock() instanceof PlushBlock)) {
+                mc.getSoundManager().stop(entry.getValue());
+                return true;
+            }
+            return false;
+        });
     }
 }
