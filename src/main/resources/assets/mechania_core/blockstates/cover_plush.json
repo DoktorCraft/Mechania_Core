@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "mechania_core:block/cover_plush"
+    },
+    "facing=south": {
+      "model": "mechania_core:block/cover_plush",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "mechania_core:block/cover_plush",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "mechania_core:block/cover_plush",
+      "y": 270
+    }
+  }
+}

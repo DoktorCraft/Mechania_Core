@@ -41,8 +41,22 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> MANDARINE = registerBlock("mandarine",
             () -> new PlushBlock(BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.WOOL).noOcclusion(), ModSounds.METE_PLUSH.get()));
+    public static final DeferredBlock<Block> METE_PLUSH = registerBlock("mete_plush",
+            () -> new PlushBlock(BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.WOOL).noOcclusion(), ModSounds.METE_PLUSH.get()));
     public static final DeferredBlock<Block> DOK_PLUSH = registerBlock("dok_plush",
-            () -> new PlushBlock(BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.WOOL).noOcclusion(), ModSounds.DOK_PLUSH.get()));
+            () -> new PlushBlock(BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.WOOL).noOcclusion(), ModSounds.HDF_DOK.get()));
+    public static final DeferredBlock<Block> LEON_PLUSH = registerBlock("leon_plush",
+            () -> new PlushBlock(BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.WOOL).noOcclusion(), ModSounds.BIEN_PLUSH.get()));
+    public static final DeferredBlock<Block> LACHSI_PLUSH = registerBlock("lachsi_plush",
+            () -> new PlushBlock(BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.WOOL).noOcclusion(), ModSounds.LACHSI_PLUSH.get()));
+    public static final DeferredBlock<Block> COVER_PLUSH = registerBlock("cover_plush",
+            () -> new PlushBlock(BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.WOOL).noOcclusion(), ModSounds.COVER_PLUSH.get()));
+    public static final DeferredBlock<Block> MADDIE_PLUSH = registerBlock("maddie_plush",
+            () -> new PlushBlock(BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.WOOL).noOcclusion(), ModSounds.MADDIE_PLUSH.get()));
+    public static final DeferredBlock<Block> FLOWERY_PLUSH = registerBlock("flowery_plush",
+            () -> new PlushBlock(BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.WOOL).noOcclusion(), ModSounds.FLOWERY_PLUSH.get())); //Can you say Jarona?
+    public static final DeferredBlock<Block> NULL_PLUSH = registerBlock("null_plush",
+            () -> new PlushBlock(BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.WOOL).noOcclusion(), ModSounds.NULL_PLUSH.get()));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

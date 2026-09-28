@@ -56,6 +56,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.FLUORITE_DEPOSIT);
                         output.accept(ModBlocks.MANDARINE);
                         output.accept(ModBlocks.DOK_PLUSH);
+                        output.accept(ModBlocks.LEON_PLUSH);
+                        output.accept(ModBlocks.COVER_PLUSH);
+                        output.accept(ModBlocks.LACHSI_PLUSH);
+                        output.accept(ModBlocks.MADDIE_PLUSH);
+                        output.accept(ModBlocks.METE_PLUSH);
+                        output.accept(ModBlocks.FLOWERY_PLUSH);
+                        output.accept(ModBlocks.NULL_PLUSH);
                     }).build());
 
 

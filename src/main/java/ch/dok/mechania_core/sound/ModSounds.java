@@ -17,10 +17,11 @@ public class ModSounds {
     public static final Supplier<SoundEvent> HDF_DOK = registerSoundEvent("hdf_dok");
     public static final Supplier<SoundEvent> LACHSI_PLUSH = registerSoundEvent("lachsi_plush");
     public static final Supplier<SoundEvent> METE_PLUSH = registerSoundEvent("mete_plush");
-    public static final Supplier<SoundEvent> DOK_PLUSH = registerSoundEvent("dok_plush");
     public static final Supplier<SoundEvent> BIEN_PLUSH = registerSoundEvent("bien_plush");
-    public static final Supplier<SoundEvent> MATTI_PLUSH = registerSoundEvent("matti_plush");
-    public static final Supplier<SoundEvent> SODOG_PLUSH = registerSoundEvent("sodog_plush");
+    public static final Supplier<SoundEvent> MADDIE_PLUSH = registerSoundEvent("maddie_plush");
+    public static final Supplier<SoundEvent> COVER_PLUSH = registerSoundEvent("cover_plush");
+    public static final Supplier<SoundEvent> FLOWERY_PLUSH = registerSoundEvent("flowery_plush");
+    public static final Supplier<SoundEvent> NULL_PLUSH = registerSoundEvent("null_plush");
 
 
 
