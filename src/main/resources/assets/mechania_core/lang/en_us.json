@@ -23,6 +23,7 @@
   "block.mechania_core.trs_plush": "Theredstonee Plushie",
   "block.mechania_core.jime_plush": "Jimekraft Plushie",
   "block.mechania_core.tung_plush": "Triple T Plushie",
+  "block.mechania_core.jeb_plush": "Jebediah Plushie",
 
   "item.mechania_core.mechanium_ingot": "Mechanium Ingot",
   "item.mechania_core.mechanium_nugget": "Mechanium Nugget",
@@ -48,5 +49,10 @@
   "item.mechania_core.subterrestial_mechanium_fragment": "Subterrestial Mechanium Fragment",
   "item.mechania_core.synthetic_mechanium_fragment": "Synthetic Mechanium Fragment",
   "item.mechania_core.terrestial_mechanium_fragment": "Terrestial Mechanium Fragment",
-  "item.mechania_core.ominous_cave_tablet": "Ominous Cave Tablet"
+  "item.mechania_core.ominous_cave_tablet": "Ominous Cave Tablet",
+  "item.mechania_core.molten_mechanium_bucket": "Bucket of Molten Mechanium",
+  "item.mechania_core.unrefined_molten_mechanium_bucket": "Bucket of Unrefined Molten Mechanium",
+  "item.mechania_core.molten_gunmetal_bucket": "Bucket of Molten Gunmetal",
+  "item.mechania_core.uranium_solution_bucket": "Bucket of Uranium Solution",
+  "item.mechania_core.uranium_slurry_bucket": "Bucket of Uranium Slurry"
 }

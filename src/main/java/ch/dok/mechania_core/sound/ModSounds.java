@@ -26,6 +26,7 @@ public class ModSounds {
     public static final Supplier<SoundEvent> TUNG_PLUSH = registerSoundEvent("tung_plush");
     public static final Supplier<SoundEvent> TRS_PLUSH = registerSoundEvent("trs_plush");
     public static final Supplier<SoundEvent> JIME_PLUSH = registerSoundEvent("jime_plush");
+    public static final Supplier<SoundEvent> JEB_PLUSH = registerSoundEvent("jeb_plush");
 
 
 

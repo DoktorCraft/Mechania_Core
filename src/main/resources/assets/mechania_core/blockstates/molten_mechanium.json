@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mechania_core:block/molten_mechanium"
+    }
+  }
+}

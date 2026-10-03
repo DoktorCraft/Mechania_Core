@@ -2,6 +2,7 @@ package ch.dok.mechania_core.item;
 
 import ch.dok.mechania_core.Mechania_core;
 import ch.dok.mechania_core.block.ModBlocks;
+import ch.dok.mechania_core.fluid.ModFluidItem;
 import ch.dok.mechania_core.item.ModItem;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -44,6 +45,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModItem.ELECTRICAL_MECHANIUM_FRAGMENT);
                         output.accept(ModItem.SYNTHETIC_MECHANIUM_FRAGMENT);
                         output.accept(ModItem.MECHANICAL_MECHANIUM_FRAGMENT);
+                        output.accept(ModFluidItem.MOLTEN_MECHANIUM_BUCKET.get());
+                        output.accept(ModFluidItem.UNREFINED_MOLTEN_MECHANIUM_BUCKET.get());
+                        output.accept(ModFluidItem.MOLTEN_GUNMETAL_BUCKET.get());
+                        output.accept(ModFluidItem.URANIUM_SLURRY_BUCKET.get());
+                        output.accept(ModFluidItem.URANIUM_SOLUTION_BUCKET.get());
                         output.accept(ModItem.OMINOUS_CAVE_TABLET);
                         output.accept(ModBlocks.MECHANIUM_BLOCK);
                         output.accept(ModBlocks.ELECTROMAGNETIC_COIL);
@@ -67,6 +73,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.TUNG_PLUSH);
                         output.accept(ModBlocks.TRS_PLUSH);
                         output.accept(ModBlocks.JIME_PLUSH);
+                        output.accept(ModBlocks.JEB_PLUSH);
                     }).build());
 
 

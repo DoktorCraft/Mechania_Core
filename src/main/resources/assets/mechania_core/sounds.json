@@ -76,5 +76,11 @@
     "sounds": [
       "mechania_core:jime_plush"
     ]
+  },
+  "jeb_plush": {
+    "subtitle": "sounds.mechania_core.jeb_plush",
+    "sounds": [
+      "mechania_core:jeb_plush"
+    ]
   }
 }

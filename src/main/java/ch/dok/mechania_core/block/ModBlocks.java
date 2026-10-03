@@ -65,6 +65,8 @@ public class ModBlocks {
             () -> new PlushBlock(BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.WOOL).noOcclusion(), ModSounds.TRS_PLUSH.get()));
     public static final DeferredBlock<Block> JIME_PLUSH = registerBlock("jime_plush",
             () -> new PlushBlock(BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.WOOL).noOcclusion(), ModSounds.JIME_PLUSH.get()));
+    public static final DeferredBlock<Block> JEB_PLUSH = registerBlock("jeb_plush",
+            () -> new PlushBlock(BlockBehaviour.Properties.of().strength(0.5f).sound(SoundType.WOOL).noOcclusion(), ModSounds.JEB_PLUSH.get()));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
