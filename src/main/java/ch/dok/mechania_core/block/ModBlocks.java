@@ -7,12 +7,10 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import ch.dok.mechania_core.block.custom.PlushBlock;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
-import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -74,7 +72,10 @@ public class ModBlocks {
         return toReturn;
     }
     private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {
-        ModItem.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+        ModItem.ITEMS.register(name, () -> {
+            Item.Properties props = new Item.Properties();
+            return new BlockItem(block.get(), props);
+        });
     }
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

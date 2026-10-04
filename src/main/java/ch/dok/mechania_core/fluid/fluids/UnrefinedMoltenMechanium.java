@@ -44,7 +44,7 @@ public class UnrefinedMoltenMechanium {
                 UNREFINED_MOLTEN_MECHANIUM_STILL_RL,
                 UNREFINED_MOLTEN_MECHANIUM_FLOWING_RL,
                 UNREFINED_MOLTEN_MECHANIUM_OVERLAY_RL,
-                0x660078,
+                0x77008C,
                 new Vector3f(0.0078f, 0.090f, 0.074f),
                 properties
         ) {
@@ -68,7 +68,7 @@ public class UnrefinedMoltenMechanium {
 
                     @Override
                     public int getTintColor() {
-                        return 0x660078;
+                        return 0x77008C;
                     }
 
 

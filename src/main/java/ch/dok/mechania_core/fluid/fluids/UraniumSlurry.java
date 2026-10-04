@@ -44,7 +44,7 @@ public class UraniumSlurry {
                 URANIUM_SLURRY_STILL_RL,
                 URANIUM_SLURRY_FLOWING_RL,
                 URANIUM_SLURRY_OVERLAY_RL,
-                0x0F4D00,
+                0x1B7A00,
                 new Vector3f(0.0078f, 0.090f, 0.074f),
                 properties
         ) {
@@ -68,7 +68,7 @@ public class UraniumSlurry {
 
                     @Override
                     public int getTintColor() {
-                        return 0x0F4D00;
+                        return 0x1B7A00;
                     }
 
 
