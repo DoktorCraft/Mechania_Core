@@ -101,7 +101,7 @@ public class PlushBlock extends HorizontalDirectionalBlock implements Equipable 
         if (level.isClientSide()) {
             stopActiveSound(pos);
 
-            float pitch = 1.0f + level.getRandom().nextFloat() * 0.25f - 0.1f;
+            float pitch = 1.0f + level.getRandom().nextFloat() * 0.25f - 0.2f;
             SoundInstance instance = new SimpleSoundInstance(
                 plushSound.getLocation(), SoundSource.BLOCKS, 0.5f, pitch,
                 level.getRandom(), false, 0, SoundInstance.Attenuation.LINEAR,
