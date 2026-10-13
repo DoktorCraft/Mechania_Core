@@ -1,6 +1,17 @@
 {
   "creativetab.mechania_core": "Mechania Core",
 
+  "fluid_type.mechania_core.molten_mechanium_block": "Molten Mechanium",
+  "fluid_type.mechania_core.flowing_molten_mechanium_block": "Flowing Molten Mechanium",
+  "fluid_type.mechania_core.unrefined_molten_mechanium_block": "Unrefined Molten Mechanium",
+  "fluid_type.mechania_core.flowing_unrefined_molten_mechanium_block": "Flowing Unrefined Molten Mechanium",
+  "fluid_type.mechania_core.molten_gunmetal_fluid_block": "Molten Gunmetal",
+  "fluid_type.mechania_core.flowing_molten_gunmetal_fluid_block": "Flowing Molten Gunmetal",
+  "fluid_type.mechania_core.uranium_solution_fluid_block": "Uranium Solution",
+  "fluid_type.mechania_core.flowing_uranium_solution_fluid_block": "Flowing Uranium Solution",
+  "fluid_type.mechania_core.uranium_slurry_fluid_block": "Uranium Slurry",
+  "fluid_type.mechania_core.flowing_uranium_slurry_fluid_block": "Flowing Uranium Slurry",
+
   "block.mechania_core.mechanium_block": "Mechanium Block",
   "block.mechania_core.electromagnetic_coil": "Electromagnetic Coil",
   "block.mechania_core.nuclear_casing": "Nuclear Casing",
@@ -24,6 +35,11 @@
   "block.mechania_core.jime_plush": "Jimekraft Plushie",
   "block.mechania_core.tung_plush": "Triple T Plushie",
   "block.mechania_core.jeb_plush": "Jebediah Plushie",
+  "block.mechania_core.molten_mechanium": "Molten Mechanium",
+  "block.mechania_core.unrefined_molten_mechanium": "Unrefined Molten Mechanium",
+  "block.mechania_core.molten_gunmetal": "Molten Gunmetal",
+  "block.mechania_core.uranium_slurry": "Uranium Slurry",
+  "block.mechania_core.uranium_solution": "Uranium Solution",
 
   "item.mechania_core.mechanium_ingot": "Mechanium Ingot",
   "item.mechania_core.mechanium_nugget": "Mechanium Nugget",
