@@ -69,7 +69,7 @@ public class ModFluidBlock {
                     )
             );
     public static final DeferredHolder<Block, LiquidBlock> URANIUM_SOLUTION_BLOCK =
-            BLOCKS.register("uranium_solution",
+            BLOCKS.register("uranium_solution_block",
                     () -> new LiquidBlock(ModFluid.SOURCE_URANIUM_SOLUTION.get(),
                             BlockBehaviour.Properties.of()
                                     .mapColor(MapColor.COLOR_GREEN)
@@ -83,7 +83,7 @@ public class ModFluidBlock {
                     )
             );
     public static final DeferredHolder<Block, LiquidBlock> URANIUM_SLURRY_BLOCK =
-            BLOCKS.register("uranium_slurry",
+            BLOCKS.register("uranium_slurry_block",
                     () -> new LiquidBlock(ModFluid.SOURCE_URANIUM_SLURRY.get(),
                             BlockBehaviour.Properties.of()
                                     .mapColor(MapColor.COLOR_GREEN)
